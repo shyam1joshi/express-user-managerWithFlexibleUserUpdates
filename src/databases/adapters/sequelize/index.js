@@ -57,10 +57,12 @@ class SequelizeStore {
     try {
       switch(engine) {
       case 'sqlite'   : sequelize = connectSqlite(storagePath); break;
-      case 'mariadb'  :
-      case 'mssql'    :
-      case 'mysql'    :
-      case 'postgres' : sequelize = connectGeneric(engine); break;
+      // case 'mariadb'  :
+      // case 'mssql'    :
+      // case 'mysql'    :
+      // case 'postgres' : sequelize = connectGeneric(engine); break;
+      // Taken out for better testing methods, once testing without an actual database is made ,
+      // we can move on from here
       case 'memory'   :
       default         : engine = 'in:memory';
         sequelize = connectMemory(); break;
@@ -104,18 +106,18 @@ class SequelizeStore {
         logging: logger,
       });
     }
-
-    function connectGeneric(engine) {
-      return new Sequelize({
-        host,
-        port,
-        database: dbName,
-        dialect: engine,
-        username: user,
-        password: pass,
-        logging: logger,
-      });
-    }
+ //Bring back when better testing for mysql is done
+    // function connectGeneric(engine) {
+    //   return new Sequelize({
+    //     host,
+    //     port,
+    //     database: dbName,
+    //     dialect: engine,
+    //     username: user,
+    //     password: pass,
+    //     logging: logger,
+    //   });
+    // }
   }
 
   async disconnect() {

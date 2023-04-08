@@ -1,7 +1,8 @@
 {
   "name": "express-user-manager",
-  "version": "3.0.1",
+  "version": "7.0.0",
   "description": "A user management and authentication library for Express apps.",
+  "removed": " \"markdown-viewer\": \"1.0.1\"",
   "main": "src/index.js",
   "scripts": {
     "test": "npm run test:unit && npm run test:db:all && npm run test:e2e:all",
@@ -56,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simplymichael/express-user-manager.git"
+    "url": "git+https://github.com/shyam1joshi/express-user-managerWithFlexibleUserUpdates.git"
   },
   "keywords": [
     "authentication",
@@ -84,16 +85,15 @@
     "chai-http": "4.3.0",
     "chai-spies": "1.0.0",
     "codecov": "3.8.1",
-    "commitizen": "4.2.2",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.13.0",
     "ghooks": "2.0.4",
-    "markdown-viewer": "1.0.1",
-    "mocha": "8.2.1",
-    "node-fetch": "2.6.1",
+    "mocha": "^10.2.0",
+    "node-fetch": "^2.6.9",
     "nyc": "15.1.0",
-    "run-script-os": "1.1.3",
-    "standard-version": "9.0.0"
+    "run-script-os": "^1.1.5",
+    "standard-version": "^9.5.0"
   },
   "config": {
     "commitizen": {
@@ -108,20 +108,20 @@
     "cookie-parser": "1.4.5",
     "dotenv": "8.2.0",
     "email-validator": "2.0.4",
-    "express": "4.17.1",
+    "express": "^4.18.2",
     "express-session": "1.17.1",
     "express-validator": "6.6.1",
-    "jsonwebtoken": "8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mariadb": "2.5.2",
-    "mongoose": "5.10.15",
+    "mongoose": "^5.13.17",
     "morgan": "1.10.0",
     "mysql2": "2.2.5",
-    "nodemon": "2.0.6",
+    "nodemon": "^2.0.22",
     "pg": "8.5.1",
     "pg-hstore": "2.3.3",
     "random-bytes": "1.0.0",
-    "sequelize": "6.3.5",
-    "sqlite3": "5.0.0",
-    "tedious": "9.2.1"
+    "sequelize": "^6.30.0",
+    "sqlite3": "^5.1.6",
+    "tedious": "^15.1.3"
   }
 }
