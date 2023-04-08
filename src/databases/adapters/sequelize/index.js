@@ -106,7 +106,12 @@ class SequelizeStore {
         logging: logger,
       });
     }
- //Bring back when better testing for mysql is done
+
+    //Bring back when better testing for mysql is done
+    //remove this line when done ;
+    host = host+port+user+pass; 
+    console.log(host);
+    
     // function connectGeneric(engine) {
     //   return new Sequelize({
     //     host,
