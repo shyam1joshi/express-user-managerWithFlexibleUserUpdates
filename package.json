@@ -1,6 +1,6 @@
 {
   "name": "express-user-manager",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "A user management and authentication library for Express apps.",
   "removed": " \"markdown-viewer\": \"1.0.1\"",
   "main": "src/index.js",
