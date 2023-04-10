@@ -195,7 +195,8 @@ function getDbAdapter(adapter) {
     'findByUsername',
     'findById',
     'updateUser',
-    'deleteUser'
+    'deleteUser',
+    'assignUserModel'
   ];
 
   for(let key of storeMethods) {
