@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let User = require('./data/models/user-model');
+let User = null;
 
 
 // we put this here, rather than make it a property of the class instance
@@ -321,7 +321,9 @@ class MongooseStore {
     return orderBy;
   }
   assignUserModel(userModel){
+    if(userModel)
     User = userModel;
+    else User =  require('./data/models/user-model');
   }
 }
 
